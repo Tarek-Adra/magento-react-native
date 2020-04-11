@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
-  ScrollView, View, StyleSheet, RefreshControl,
+  ScrollView, View, Image, StyleSheet, RefreshControl,
 } from 'react-native';
 import { connect } from 'react-redux';
 import _ from 'lodash';
@@ -21,14 +21,22 @@ class HomeScreen extends Component {
   static contextType = ThemeContext;
 
   static navigationOptions = ({ navigation }) => ({
-    title: translate('home.title'),
+    headerTitle: //translate('home.title'),
+      (
+        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center' }}>
+          <Image
+            source={require('../../assets/images/logo.png')}
+            style={styles.logoHeader}
+          />
+        </View>
+      ),
     headerBackTitle: ' ',
     headerLeft: (
       <MaterialHeaderButtons>
         <Item title="menu" iconName="menu" onPress={navigation.getParam('toggleDrawer')} />
       </MaterialHeaderButtons>
     ),
-   // headerRight: <CurrencyPicker />,
+   headerRight: <View></View>,
   });
 
   componentDidMount() {
@@ -87,7 +95,7 @@ class HomeScreen extends Component {
             refreshing={this.props.refreshing}
             onRefresh={this.onRefresh}
           />
-          )}
+        )}
       >
         <HomeSlider slider={this.props.slider} />
         {this.renderFeatured()}
@@ -106,6 +114,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  logoHeader: {
+    width:120,
+    resizeMode: 'contain',
+  }
 });
 
 HomeScreen.propTypes = {
