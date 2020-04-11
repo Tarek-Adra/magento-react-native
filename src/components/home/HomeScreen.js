@@ -11,7 +11,7 @@ import {
 } from '../../navigation/routes';
 import { getHomeData, setCurrentProduct } from '../../actions';
 import HomeSlider from './HomeSlider';
-import CurrencyPicker from './CurrencyPicker';
+// import CurrencyPicker from './CurrencyPicker';
 import FeaturedProducts from './FeaturedProducts';
 import NavigationService from '../../navigation/NavigationService';
 import { ThemeContext } from '../../theme';

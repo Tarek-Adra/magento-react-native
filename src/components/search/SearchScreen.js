@@ -116,11 +116,11 @@ const styles = {
     width: theme.dimens.WINDOW_WIDTH,
   }),
   inputContainerStyle: theme => ({
-    backgroundColor: theme.colors.surface,
+    backgroundColor: theme.colors.lightGray,
     borderRadius: theme.dimens.searchBarBorderRadius,
   }),
   inputStyle: theme => ({
-    backgroundColor: theme.colors.surface,
+    backgroundColor: theme.colors.lightGray,
     color: theme.colors.titleText,
   }),
   notFoundTextWrap: {

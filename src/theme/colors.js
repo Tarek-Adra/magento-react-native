@@ -9,7 +9,7 @@ export default {
    */
   primaryDark: '#000',
   primary: '#fff',
-  tabBarBackground: '#fff',
+  tabBarBackground: '#ebebeb',
   tabBarIconInactive: '#8c8c8c',
   appbarTint: '#000',
   /**
@@ -36,7 +36,7 @@ export default {
   /**
    * The screen background.
    */
-  background: '#F7F6F4',
+  background: '#fff',
   /**
    * To be used as a default background for all components, like Card, CardSection, List etc
    */
@@ -44,7 +44,7 @@ export default {
   /**
    * Use it for card border
    */
-  border: '#d9d9d9',
+  border: '#fff',
   /**
    * Success messages and icons.
    */
@@ -68,4 +68,5 @@ export default {
   captionText: '#8c8c8c',
   black: '#000000',
   white: '#ffffff',
+  lightGray: '#ebebeb',
 };
