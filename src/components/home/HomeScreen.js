@@ -28,7 +28,7 @@ class HomeScreen extends Component {
         <Item title="menu" iconName="menu" onPress={navigation.getParam('toggleDrawer')} />
       </MaterialHeaderButtons>
     ),
-    headerRight: <CurrencyPicker />,
+   // headerRight: <CurrencyPicker />,
   });
 
   componentDidMount() {

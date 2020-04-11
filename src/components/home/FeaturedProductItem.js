@@ -58,6 +58,8 @@ const FeaturedProductItem = ({
             discountPrice={price}
             currencySymbol={currencySymbol}
             currencyRate={currencyRate}
+            // eslint-disable-next-line react-native/no-inline-styles
+            style={{flexDirection: 'column' }}
           />
         </View>
       </TouchableOpacity>
